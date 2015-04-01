@@ -1,0 +1,5 @@
+Django==1.7.7
+django-registration-redux==1.1
+psycopg2==2.6
+sorl-thumbnail==12.2
+wsgiref==0.1.2

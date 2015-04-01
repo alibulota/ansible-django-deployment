@@ -1,2 +1,2 @@
 django_home: /home/ubuntu/ab_django_work/imager
-rds_db_instance: django-ansible
+# rds_db_instance: django-ansible

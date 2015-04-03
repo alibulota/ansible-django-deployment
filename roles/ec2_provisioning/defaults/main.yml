@@ -1,11 +1,10 @@
-keypair: Primary KP
+keypair: ansible
 security_group: ssh-access
-instance_type: t2.micro
-ami: ami-e7527ed7
+instance_type: t1.micro
+ami: ami-d0d8b8e0
 vpc_subnet_id: subnet-9218bee5
 region: us-west-2
 instance_tags: {"Name": "ansible-built"}
 root_ebs_size: 8
 zone: us-west-2b
-instance_profile_name: mypoweruser
 num_instances: 1

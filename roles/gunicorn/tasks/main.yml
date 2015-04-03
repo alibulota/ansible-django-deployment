@@ -6,8 +6,12 @@
 
 - name: Create gunicorn Upstart Job
   sudo: yes
-  template: src=imagerapp.conf.j2 dest=/etc/init/imagerapp.conf
+  template: src=imagerapp.conf dest=/etc/init/imagerapp.conf
+
+- name: Stop gunicorn Upstart Job
+  sudo: yes
+  service: name=imagerapp state=stopped
 
 - name: Start gunicorn Upstart Job
   sudo: yes
-  service: name=immagerapp state=restarted
+  service: name=imagerapp state=started
